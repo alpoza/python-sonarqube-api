@@ -228,7 +228,7 @@ class SonarAPIHandler(object):
         :return: generator that yields rule data dicts
         """
         # Build the queryset
-        qs = {'is_template': 'no', 'statuses': 'READY'}
+        qs = {'is_template': 'false', 'statuses': 'READY'}
 
         # Add profile and activity params
         if profile:
